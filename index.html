@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로봇 & AI 비전 엔지니어 포트폴리오</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            deep: '#0f172a',
+                            card: '#1e293b',
+                            primary: '#6366f1',
+                            secondary: '#10b981',
+                            accent: '#f59e0b'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-deep text-slate-200 font-sans antialiased">
+
+    <nav class="fixed top-0 left-0 w-full bg-brand-deep/80 backdrop-blur-md z-50 border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <span class="text-xl font-bold tracking-tight text-white">YOON. <span class="text-brand-primary">DEV</span></span>
+            <div class="space-x-6 text-sm font-medium">
+                <a href="#about" class="hover:text-brand-primary transition">About</a>
+                <a href="#skills" class="hover:text-brand-primary transition">Skills</a>
+                <a href="#projects" class="hover:text-brand-primary transition">Projects</a>
+                <a href="#contact" class="px-3 py-2 bg-brand-primary text-white rounded-md hover:bg-indigo-600 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-32 pb-20 px-4 max-w-4xl mx-auto text-center">
+        <div class="inline-flex items-center space-x-2 bg-indigo-500/10 text-brand-primary px-3 py-1 rounded-full text-xs font-semibold mb-6 border border-indigo-500/20">
+            <i class="fa-solid fa-robot animate-pulse"></i> <span>Robotics & AI Vision Specialist</span>
+        </div>
+        <h1 class="text-4xl md:text-5xl font-extrabold text-white tracking-tight mb-4 leading-tight">
+            지능형 협동로봇 제어 및 <br class="md:hidden"><span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-secondary">3D 공간 매핑</span> 엔지니어
+        </h1>
+        <p class="text-base md:text-lg text-slate-400 max-w-2xl mx-auto mb-8">
+            인간과 로봇의 안전한 협업(HRI)을 전제로, 관절 토크 변량 분석 기반 결함 검출 알고리즘 및 다시점 3D 포인트 클라우드 병합 메커니즘을 독자적으로 수립한 자동화 솔루션 전문가입니다.
+        </p>
+        <div class="flex justify-center space-x-4">
+            <a href="#projects" class="px-6 py-3 bg-brand-primary text-white font-medium rounded-lg hover:bg-indigo-600 transition shadow-lg shadow-indigo-500/20">프로젝트 보기</a>
+            <a href="#contact" class="px-6 py-3 bg-slate-800 text-slate-300 font-medium rounded-lg hover:bg-slate-700 transition border border-slate-700">컨택하기</a>
+        </div>
+    </header>
+
+    <section id="about" class="py-16 max-w-5xl mx-auto px-4 border-t border-slate-800">
+        <h2 class="text-2xl font-bold text-white mb-8 flex items-center space-x-2">
+            <span class="w-1 h-6 bg-brand-primary rounded-full"></span>
+            <span>About Me</span>
+        </h2>
+        <div class="bg-brand-card p-6 md:p-8 rounded-xl border border-slate-800 shadow-xl">
+            <p class="text-slate-300 leading-relaxed mb-4">
+                저는 현장 제조 및 정비 공정에서 발생하는 물리적 오차와 오판정 한계를 <span class="text-white font-semibold">소프트웨어 알고리즘과 기하학적 연산</span>으로 완벽히 통제하는 데 강점이 있습니다.
+            </p>
+            <p class="text-slate-300 leading-relaxed">
+                두산로보틱스의 m0609 협동로봇과 ROS 2 생태계를 기반으로, 위치 제어 방식을 넘어선 <strong>접촉식 조인트 토크 제어 기술</strong>과 <strong>비접촉식 YOLOv8 카메라 융합 3D 공간 복합 스캐닝 메커니즘</strong>을 완성하며 상용 자동화 솔루션 수준의 데이터 신뢰성(NG 판정 고도화)을 검증했습니다.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills" class="py-16 max-w-5xl mx-auto px-4 border-t border-slate-800">
+        <h2 class="text-2xl font-bold text-white mb-8 flex items-center space-x-2">
+            <span class="w-1 h-6 bg-brand-primary rounded-full"></span>
+            <span>Technical Skills</span>
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-brand-card p-6 rounded-xl border border-slate-800">
+                <h3 class="text-brand-primary font-bold mb-4 flex items-center space-x-2">
+                    <i class="fa-solid fa-gears"></i> <span>Robot Control & Geometry</span>
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-slate-900 border border-slate-700 px-3 py-1 rounded-md text-xs">Doosan API (DSR_ROBOT2)</span>
+                    <span class="bg-slate-900 border border-slate-700 px-3 py-1 rounded-md text-xs">DRL Script Control</span>
+                    <span class="bg-slate-900 border border-slate-700 px-3 py-1 rounded-md text-xs">ROS 2 Humble Extended</span>
+                    <span class="bg-slate-900 border border-slate-700 px-3 py-1 rounded-md text-xs">Forward Kinematics ($4\times4$ Matrix)</span>
+                    <span class="bg-slate-900 border border-slate-700 px-3 py-1 rounded-md text-xs">Compliance & Force Control</span>
+                    <span class="bg-slate-900 border border-slate-700 px-3 py-1 rounded-md text-xs">Cubic Spline Interpolation</span>
+                </div>
+            </div>
+            <div class="bg-brand-card p-6 rounded-xl border border-slate-800">
+                <h3 class="text-brand-secondary font-bold mb-4 flex items-center space-x-2">
+                    <i class="fa-solid fa-eye"></i> <span>Computer Vision & AI</span>
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-slate-900 border border-slate-700 px-3 py-1 rounded-md text-xs">YOLOv8 Inference</span>
+                    <span class="bg-slate-900 border border-slate-700 px-3 py-1 rounded-md text-xs">Intel RealSense D435i Depth</span>
+                    <span class="bg-slate-900 border border-slate-700 px-3 py-1 rounded-md text-xs">3D Point Cloud Stitching</span>
+                    <span class="bg-slate-900 border border-slate-700 px-3 py-1 rounded-md text-xs">Eye-in-Hand / Eye-to-Hand Architecture</span>
+                    <span class="bg-slate-900 border border-slate-700 px-3 py-1 rounded-md text-xs">LLM Agent Node System</span>
+                    <span class="bg-slate-900 border border-slate-700 px-3 py-1 rounded-md text-xs">OpenCV Vector Geometry</span>
+                </div>
+            </div>
+            <div class="bg-brand-card p-6 rounded-xl border border-slate-800 md:col-span-2">
+                <h3 class="text-brand-accent font-bold mb-4 flex items-center space-x-2">
+                    <i class="fa-solid fa-code"></i> <span>Software Infrastructure & DB</span>
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-slate-900 border border-slate-700 px-3 py-1 rounded-md text-xs">Python</span>
+                    <span class="bg-slate-900 border border-slate-700 px-3 py-1 rounded-md text-xs">C++</span>
+                    <span class="bg-slate-900 border border-slate-700 px-3 py-1 rounded-md text-xs">Fast DDS Network</span>
+                    <span class="bg-slate-900 border border-slate-700 px-3 py-1 rounded-md text-xs">Firebase Realtime DB</span>
+                    <span class="bg-slate-900 border border-slate-700 px-3 py-1 rounded-md text-xs">Firebase Cloud Storage</span>
+                    <span class="bg-slate-900 border border-slate-700 px-3 py-1 rounded-md text-xs">Plotly.js (Zero-Latency Data Streaming)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-16 max-w-5xl mx-auto px-4 border-t border-slate-800">
+        <h2 class="text-2xl font-bold text-white mb-8 flex items-center space-x-2">
+            <span class="w-1 h-6 bg-brand-primary rounded-full"></span>
+            <span>Core Projects</span>
+        </h2>
+
+        <div class="space-y-12">
+            <div class="bg-brand-card rounded-xl border border-slate-800 overflow-hidden shadow-xl">
+                <div class="p-6 border-b border-slate-800 bg-slate-900/50 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div>
+                        <h3 class="text-xl font-bold text-white">① 지능형 협동로봇 기반 돔 표면 토크 검사 및 실시간 디지털 트윈 시스템</h3>
+                        <p class="text-xs text-slate-400 mt-1">Doosan M0609 | ROS 2 Humble | Python | Firebase | Plotly.js</p>
+                    </div>
+                    <span class="text-xs px-3 py-1 bg-indigo-500/10 text-brand-primary rounded-full font-medium border border-indigo-500/20 self-start md:self-center">접촉식 정밀 진단</span>
+                </div>
+                <div class="p-6 space-y-6">
+                    <div>
+                        <h4 class="text-sm font-semibold text-white mb-2"><i class="fa-solid fa-circle-check text-brand-primary mr-2"></i>핵심 아키텍처 및 구현 역할</h4>
+                        <ul class="list-disc list-inside text-sm text-slate-300 space-y-1 ml-2">
+                            <li>로봇 관절 데이터($q_1 \sim q_6$)의 실시간 순운동학(FK) 연산을 통해 고정밀 $4\times4$ 동차 변환 행렬 도출 및 TCP 3차원 공간 절대 좌표 산출.</li>
+                            <li>두산 DRL 원호 보간 <code>movec</code>의 <strong>원주구속(Orientation Constraint, <code>ori=2</code>)</strong> 파라미터를 조율하여, 스캔 중 툴 축이 돔 곡면과 상시 90도(&plusmn;0.8&deg;) 직각 평형을 이루도록 제어 모듈 개발.</li>
+                            <li>Plotly.js의 <code>extendTraces</code> 메모리 스트리밍 기법을 설계하여 전체 화면 재렌더링에 따른 웹 부하를 차단, 무지연 디지털 트윈 시각화 리포트 구현.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-semibold text-white mb-3"><i class="fa-solid fa-triangle-exclamation text-brand-accent mr-2"></i>엔지니어링 트러블슈팅 매트릭스</h4>
+                        <div class="overflow-x-auto text-xs">
+                            <table class="w-full text-left border-collapse border border-slate-700">
+                                <thead>
+                                    <tr class="bg-slate-900">
+                                        <th class="p-2 border border-slate-700 text-slate-300 font-semibold w-1/2">발생한 기술 문제 (Issue)</th>
+                                        <th class="p-2 border border-slate-700 text-brand-secondary font-semibold w-1/2">알고리즘적 해결책 (Action & Result)</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-slate-700">
+                                    <tr>
+                                        <td class="p-2 text-slate-400">원형 주행 각도 뒤틀림으로 인한 가상의 마찰 스파이크 노이즈 발생 (초기 오판율 40% 초과)</td>
+                                        <td class="p-2 text-slate-300"><span class="text-white font-medium">관절 토크 센서 기반 외력 변화율 정밀 감지</span> 알고리즘과 원주구속 제어를 물리 동기화하여 곡면 오판율을 5% 미만으로 극복.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2 text-slate-400">360도 연속 전주 회전 시 J5, J6 손목 관절 특이점(Singularity) 진입에 따른 제어기 <span class="text-red-400">알람 2007</span> 구동 정지 크래시</td>
+                                        <td class="p-2 text-slate-300">전체 스캔 구역을 위도별 5개 층 레이어로 쪼개고 <span class="text-white font-medium">홀수 층 CW / 짝수 층 CCW 교차 회전 차수 상쇄</span> 시퀀스를 소프트웨어로 구현하여 특이점 원천 방지.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2 text-slate-400">표면 진입 극초반 하강 가속 관성 및 컴플라이언스 댐핑력으로 유입되는 토크 데이터 오판 노이즈</td>
+                                        <td class="p-2 text-slate-300">마스터 노드 내부에 <code>IGNORE_START_FRAMES = 20</code> 필터를 이식하여 안정 속도 도달 전 초반 2초간의 수집 스위치를 자동 차단 예외 처리.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-brand-card rounded-xl border border-slate-800 overflow-hidden shadow-xl">
+                <div class="p-6 border-b border-slate-800 bg-slate-900/50 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div>
+                        <h3 class="text-xl font-bold text-white">② AI 컴퓨터 비전 및 3D 공간 맵핑 기반 나사 정밀 검사 및 자동 정비 시스템</h3>
+                        <p class="text-xs text-slate-400 mt-1">Doosan M0609 | Intel RealSense D435i | 웹캠 | YOLOv8 | Fast DDS | LLM Agent</p>
+                    </div>
+                    <span class="text-xs px-3 py-1 bg-emerald-500/10 text-brand-secondary rounded-full font-medium border border-emerald-500/20 self-start md:self-center">비접촉식 비전 & 3D 정렬</span>
+                </div>
+                <div class="p-6 space-y-6">
+                    <div>
+                        <h4 class="text-sm font-semibold text-white mb-2"><i class="fa-solid fa-circle-check text-brand-secondary mr-2"></i>핵심 아키텍처 및 구현 역할</h4>
+                        <ul class="list-disc list-inside text-sm text-slate-300 space-y-1 ml-2">
+                            <li>그리퍼단 Eye-in-Hand (RealSense) 카메라와 작업장 Eye-to-Hand (외부캠) 장치를 ROS 2 토픽 네트워크로 동기화(<code>/yolo/screw_coords</code>)하는 듀얼 비전 파이프라인 수립.</li>
+                            <li>RealSense 픽셀 깊이 공간 상의 3점 데이터를 기하 추출 후 **벡터 외적(Vector Cross Product)**을 연산하여 부품 표면의 <span class="text-white font-medium">법선 벡터(Normal Vector)</span>를 산출, 로봇 TCP가 직각 평행 정렬을 지키는 Look-at 자동 제어 엔진 개발.</li>
+                            <li>사각지대 차단을 위해 물체 5개 면(앞, 양옆, 위, 아래)을 순차 기동 스캔하고, 로컬 점군 데이터를 로봇 관절 변환 행렬과 곱하여 절대 <code>base_link</code> 좌표계 중심으로 3D 정렬 축적하는 Stitching 융합 기술 구현.</li>
+                            <li>스마트 그리퍼 탈착 센싱 상태에 따라 LLM Agent 노드가 자율 의사결정을 수행하여 '공동 동시 체결 조임 모드'에서 '결함 지시(Pointing) 검수 가이드 모드'로 자율 모드 전환되는 HRI 아키텍처 빌드.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-semibold text-white mb-3"><i class="fa-solid fa-triangle-exclamation text-brand-accent mr-2"></i>엔지니어링 트러블슈팅 매트릭스</h4>
+                        <div class="overflow-x-auto text-xs">
+                            <table class="w-full text-left border-collapse border border-slate-700">
+                                <thead>
+                                    <tr class="bg-slate-900">
+                                        <th class="p-2 border border-slate-700 text-slate-300 font-semibold w-1/2">발생한 기술 문제 (Issue)</th>
+                                        <th class="p-2 border border-slate-700 text-brand-secondary font-semibold w-1/2">알고리즘적 해결책 (Action & Result)</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-slate-700">
+                                    <tr>
+                                        <td class="p-2 text-slate-400">부품 자체 가공 편차 및 로봇 베이스 기울어짐 발생 시 절대 Z축 깊이 측정법이 정상 조임을 불량(NG)으로 오판하는 현상</td>
+                                        <td class="p-2 text-slate-300">볼트 영역 주변 4개 지점의 높이를 실시간 평균 내어 유동적 철판면을 정의하는 <span class="text-white font-medium">상대적 단차 검사(Relative Step Height Detection)</span> 로직 수립 (1.5mm NG 임계화로 환경 오차 무력화).</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2 text-slate-400">파이썬 노드 구동 직후 DSR 라이브러리를 상단 즉시 로드할 때 백엔드 ID 미확보로 일어나는 속성 크래시 (AttributeError: 'NoneType' object)</td>
+                                        <td class="p-2 text-slate-300">런타임 진입부에 <code>DR_init</code> 노드 상수를 강제 매핑 완료한 뒤, 메인 태스크 기동 시점 함수 내부에서 모듈을 바인딩하는 <span class="text-white font-medium">지연 임포트(Lazy Import) 아키텍처 규칙</span> 수립.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2 text-slate-400">이기종 PC 분산 분산 네트워크 환경 간 두산 공식 패키지 Fast DDS 메시지 통신 버퍼 규격 불일치(72 vs 59 바이트 페이로드 충돌)</td>
+                                        <td class="p-2 text-slate-300">양측 시스템의 깃허브 오픈소스 릴리즈 커밋 버전을 완전 동일 해시 스펙으로 정렬 마이그레이션 후 워크스페이스 캐시 전면 청소 및 재빌드로 동기화 완료.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 max-w-3xl mx-auto px-4 text-center border-t border-slate-800">
+        <h2 class="text-2xl font-bold text-white mb-4">Contact Me</h2>
+        <p class="text-sm text-slate-400 mb-8">
+            협동로봇 기반의 정밀 물리 제어 시스템, AI 비전 통합 3D 센서 파이프라인 설계에 관한 <br class="hidden md:inline">엔지니어링 가치와 노하우를 나눌 준비가 되어 있습니다.
+        </p>
+        <div class="bg-brand-card p-6 rounded-xl border border-slate-800 inline-flex flex-col md:flex-row gap-6 md:gap-12 items-center text-sm">
+            <a href="mailto:yoon@example.com" class="hover:text-brand-primary transition flex items-center space-x-2">
+                <i class="fa-solid fa-envelope text-lg text-brand-primary"></i> <span>yoon@example.com</span>
+            </a>
+            <div class="flex items-center space-x-2 text-slate-300">
+                <i class="fa-solid fa-phone text-lg text-brand-secondary"></i> <span>010-XXXX-XXXX</span>
+            </a>
+            <a href="https://github.com/DoosanRobotics/doosan-robot2/tree/humble" target="_blank" class="hover:text-brand-primary transition flex items-center space-x-2">
+                <i class="fa-brands fa-github text-lg text-white"></i> <span>GitHub Repository</span>
+            </a>
+        </div>
+    </section>
+
+    <footer class="py-8 text-center text-xs text-slate-600 border-t border-slate-900 bg-slate-950">
+        <p>© 2026 Yoon. All rights reserved. Powered by GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
